@@ -5,7 +5,7 @@ development:
   encoding: unicode
   pool: 5
   database: hello_world_development
-  username: dev
+  username: postgres
   password: <%= ENV["DEV_DATABASE_PASSWORD"] %>
 
 test:
@@ -15,7 +15,7 @@ test:
   encoding: unicode
   pool: 5
   database: hello_world_test
-  username: dev
+  username: postgres
   password: <%= ENV["DEV_DATABASE_PASSWORD"] %>
 
 production:
@@ -25,5 +25,5 @@ production:
   encoding: unicode
   pool: 5
   database: hello_world_production
-  username: dev
+  username: postgres
   password: <%= ENV["DEV_DATABASE_PASSWORD"] %>
